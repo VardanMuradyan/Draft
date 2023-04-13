@@ -1,0 +1,172 @@
+@import "reset.css";
+
+body {
+    background-color: #191C24;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1720px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_nav {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header_logo {
+    font-family: 'Larken-Medium', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffff;
+    margin-right: 152px;
+    cursor: pointer;
+}
+
+.header_nav_list {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    gap: 36px;
+}
+
+.header_nav_list li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ABAEB7;
+    transition: color 280ms ease-out;
+}
+
+
+.header_nav_list li a:hover:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    height: 2px;
+    width: 100%;
+    background-color: #FFAF76;
+}
+
+.header_nav_list li a:hover {
+    color: #FFAF76;
+}
+
+.nav_button {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 30px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 280ms ease-out;
+}
+
+.nav_button:hover {
+    color: #FFAF76;
+    border-color: #FFAF76;;
+}
+
+/* Intro */
+.intro_section{
+    margin-bottom: 140px;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 69px;
+}
+
+.intro_name {
+    font-family: 'Larken-Medium', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFC978;
+    letter-spacing: 0.3em;
+    margin-bottom: 30px;
+
+}
+
+.intro_text {
+    font-family: 'Larken-Regular', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 94px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.intro_subtext {
+    width: 490px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    color: #ABAEB7;
+    margin-bottom: 50px;
+}
+
+.intro_items {
+    width: 50%;
+}
+
+.intro_img {
+    width: 1071px;
+    height: 1001px;
+    background-image: url(../images/intro/intro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro_btn {
+    display: inline-block;
+    padding: 20px 35px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: color 280ms ease-out;
+}
+
+.intro_btn:hover {
+    color: #FFAF76;
+    border-color: #FFAF76;;
+}
